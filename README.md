@@ -14,9 +14,8 @@
 
 <tab>
 <br>
-
-## Highlights
 ---
+## Highlights
 
 Follow your scenario with no limit on development or release branches, or development or production states. **SCL** empowers you to:
 - easily License or Unlicense files, toggle accordingly.
@@ -105,10 +104,12 @@ Follow your scenario with no limit on development or release branches, or develo
 ## Basic Usage
 ---
 
-#### 1: To apply license
+### 1: To apply license
 
 <details>
 <summary>long syntax</summary>
+
+<br>
 
 ```python
 
@@ -123,6 +124,8 @@ SourceCodeLicenser.license( "__path_of_application_root__" )
 <details>
 <summary>short syntax</summary>
 
+<br>
+
 ```python
 
 from mSCL import scl
@@ -136,10 +139,12 @@ scl.lic( "__path_of_application_root__" )
 <tab>
 <br>
 
-#### 2: To dispose license
+### 2: To dispose license
 
 <details>
 <summary>long syntax</summary>
+
+<br>
 
 ```python
 
@@ -153,6 +158,8 @@ SourceCodeLicenser.unlicense( "__path_of_application_root__" )
 
 <details>
 <summary>short syntax</summary>
+
+<br>
 
 ```python
 
