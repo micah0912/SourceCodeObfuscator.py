@@ -261,6 +261,7 @@ SourceCodeLicenser.license(
 )
 
 ```
+<br>
 
 </details>
 
@@ -408,6 +409,8 @@ This file is part of mSCL.py, which released under GPL-3.0-or-later.
 <details>
 <summary>long syntax</summary>
 
+<br>
+
 ```python
 
 from mSCL import SourceCodeLicenseFilter
@@ -428,11 +431,14 @@ SourceCodeFormatter.filter(
 )
 
 ```
+<br>
 
 </details>
 
 <details>
 <summary>short syntax</summary>
+
+<br>
 
 ```python
 
@@ -463,7 +469,8 @@ scf.fltr(
 ### Dependent Projects
 ---
 
-🟆 [mSCX.py](https://github.com/micah0912/mSCX.py) : Source Code X
+🟆 [mSCX.py](https://github.com/micah0912/mSCX.py)
+- Source Code X
 
 <tab>
 <br>
@@ -471,9 +478,11 @@ scf.fltr(
 ### Peer Projects
 ---
 
-🟆 [mSCF.py](https://github.com/micah0912/mSCF.py) : Source Code Format Manager
+🟆 [mSCF.py](https://github.com/micah0912/mSCF.py)
+- Source Code Format Manager
 
-🟆 [mSCO.py](https://github.com/micah0912/mSCO.py) : Source Code Obfuscation Manager
+🟆 [mSCO.py](https://github.com/micah0912/mSCO.py)
+- Source Code Obfuscation Manager
 
 <tab>
 <br>
