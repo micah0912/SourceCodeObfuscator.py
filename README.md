@@ -23,16 +23,16 @@
 SCF has been designed with two distinct functionalities: "Beautify" and "Minify" for source code optimization.
 
 **Beautify** :
-	- Formats elements for improved readability.
-	- Enhances code clarity by formatting comments.
-	- Removes extraneous lines, spaces, and tabs to streamline code structure.
-	- Modify Document Indentation, Linebreak Sequence, and Encoding.
+- Formats elements for improved readability.
+- Enhances code clarity by formatting comments.
+- Removes extraneous lines, spaces, and tabs to streamline code structure.
+- Modify Document Indentation, Linebreak Sequence, and Encoding.
 
 **Minify** : 
-	- Enhances efficiency by removing comments.
-	- Seamlessly joins lines for maximum compactness.
-	- Minimizes file size by eliminating unnecessary lines, spaces, and tabs.
-	- Modify Document Linebreak Sequence and Encoding.
+- Enhances efficiency by removing comments.
+- Seamlessly joins lines for maximum compactness.
+- Minimizes file size by eliminating unnecessary lines, spaces, and tabs.
+- Modify Document Linebreak Sequence and Encoding.
 
 <tab>
 <br>
