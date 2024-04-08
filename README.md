@@ -15,6 +15,7 @@
 <tab>
 <br>
 ---
+
 ## Highlights
 
 Follow your scenario with no limit on development or release branches, or development or production states. **SCL** empowers you to:
@@ -208,6 +209,8 @@ By giving `distribution` option, **SCL** will create a copy of target files and 
 <details>
 <summary>long syntax</summary>
 
+<br>
+
 ```python
 
 SourceCodeLicenser.license(
@@ -222,6 +225,8 @@ SourceCodeLicenser.license(
 
 <details>
 <summary>short syntax</summary>
+
+<br>
 
 ```python
 
