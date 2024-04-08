@@ -20,7 +20,7 @@
 ### Highlights
 ---
 
-SCF has been designed with two distinct functionalities: "Beautify" and "Minify" for source code optimization.
+SCF has been designed with two distinct functionalities: **"Beautify"** and **"Minify"** for source code optimization.
 
 **Beautify** :
 - Formats elements for improved readability.
