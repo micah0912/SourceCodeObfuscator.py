@@ -14,9 +14,8 @@
 
 <tab>
 <br>
+### Highlights
 ---
-
-## Highlights
 
 Follow your scenario with no limit on development or release branches, or development or production states. **SCL** empowers you to:
 - easily License or Unlicense files, toggle accordingly.
@@ -28,7 +27,7 @@ Follow your scenario with no limit on development or release branches, or develo
 <tab>
 <br>
 
-## Languages
+### Languages
 ---
 
 **Across Platform Application Language**
@@ -50,7 +49,7 @@ Follow your scenario with no limit on development or release branches, or develo
 <tab>
 <br>
 
-## Requirements
+### Requirements
 ---
 
 1. [Python](https://www.python.org) version 3.10+
@@ -58,7 +57,7 @@ Follow your scenario with no limit on development or release branches, or develo
 <tab>
 <br>
 
-## Dependencies
+### Dependencies
 ---
 
 1. [spairaru.py](https://github.com/etrotech/spairaru.py) version 1.0+
@@ -66,7 +65,7 @@ Follow your scenario with no limit on development or release branches, or develo
 <tab>
 <br>
 
-## Installation
+### Installation
 ---
 
 #### A: PIP
@@ -174,7 +173,7 @@ scl.ulic( "__path_of_application_root__" )
 <tab>
 <br> 
 
-## Advanced Usage
+### Advanced Usage
 ---
 
 *License Options*
@@ -250,6 +249,8 @@ When target file is a symbolic link, with `follow_link` option enabled, **SCL** 
 <details>
 <summary>long syntax</summary>
 
+<br>
+
 ```python
 
 SourceCodeLicenser.license(
@@ -264,6 +265,8 @@ SourceCodeLicenser.license(
 
 <details>
 <summary>short syntax</summary>
+
+<br>
 
 ```python
 
@@ -285,7 +288,7 @@ For more options, advantaged examples, refer to [mSCF.py](http://www.micah-t.xyz
 <tab>
 <br> 
 
-## Customization
+### Customization
 ---
 - Customization setting can be created by by storing custom files follow [mSCX.py](https://github.com/micah0912/mSCX.py) specification.
 - In addition to the **.scx** folder, you can also place custom files in the **.scl** or **.scl.py** folders.
@@ -293,7 +296,7 @@ For more options, advantaged examples, refer to [mSCF.py](http://www.micah-t.xyz
 <tab>
 <br>
 
-## Custom - Template
+### Custom - Template
 ---
 
 - **.tpl**, the Template file provides the licensing text will be written into target file during licensing process.
@@ -388,7 +391,7 @@ This file is part of mSCL.py, which released under GPL-3.0-or-later.
 <tab>  
 <br>
 
-## Custom - Filter
+### Custom - Filter
 ---
 
 **SourceCodeCharacterFilter** : 
@@ -456,7 +459,7 @@ scf.fltr(
 <tab>
 <br>
 
-## Dependent Projects
+### Dependent Projects
 ---
 
 🟆 [mSCX.py](https://github.com/micah0912/mSCX.py) : Source Code X
@@ -464,7 +467,7 @@ scf.fltr(
 <tab>
 <br>
 
-## Peer Projects
+### Peer Projects
 ---
 
 🟆 [mSCF.py](https://github.com/micah0912/mSCF.py) : Source Code Format Manager
@@ -474,7 +477,7 @@ scf.fltr(
 <tab>
 <br>
 
-## ☕
+### ☕
 ---
 
 If you feel this app useful and helpful, please support me to make it better.
