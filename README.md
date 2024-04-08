@@ -408,6 +408,7 @@ This file is part of mSCL.py, which released under GPL-3.0-or-later.
 <details>
 <summary>long syntax</summary>
 <br>
+
 ```python
 
 from mSCL import SourceCodeLicenseFilter
@@ -428,11 +429,13 @@ SourceCodeFormatter.filter(
 )
 
 ```
+
 </details>
 
 <details>
 <summary>short syntax</summary>
 <br>
+
 ```python
 
 from mSCF import ScLicFltr
@@ -453,6 +456,7 @@ scf.fltr(
 )
 
 ```
+
 </details>
 
 <tab>
