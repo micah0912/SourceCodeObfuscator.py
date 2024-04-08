@@ -5,7 +5,7 @@
 [![Licence-GPLv3](https://img.shields.io/badge/license-GPLv3-blue.svg?style=flat-square)](https://github.com/micah0912/SCL.py/blob/master/LICENSE)
 ![Requirement-Paython-3.10](https://img.shields.io/badge/paython-%3E=3.10-blue.svg?style=flat-square)
 
-- A powerfully source cdoe <u>**License Manager**</u>.
+- A powerfully <u>**source cdoe License Manager**</u>.
 - Developed for improved management of personal projects, and free to use.
 - Spinoff from [mSCX.py](https://github.com/micah0912/mSCX.py).
 - Built on [spairaru.py](https://github.com/etrotech/spairaru.py) framework.
