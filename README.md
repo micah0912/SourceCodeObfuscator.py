@@ -1,6 +1,6 @@
-# [Source Code Licenser - Python](http://www.micah-t.xyz)
+# [Source Code Licenser](http://www.micah-t.xyz)
 
-aka.[mSCL.py](http://www.micah-t.xyz)
+aka mSCL.py
 
 ![Release](https://img.shields.io/github/v/release/micah0912/mSCL.py?style=flat-square&color=blue)
 ![Stability-Beta](https://img.shields.io/badge/stability-mature-blue.svg?style=flat-square)
