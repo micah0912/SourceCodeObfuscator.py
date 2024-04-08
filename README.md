@@ -102,10 +102,10 @@ Follow your scenario with no limit on development or release branches, or develo
 <tab>
 <br> 
 
-## Basic Usage
+### Basic Usage
 ---
 
-### 1: To apply license
+#### 1: To apply license
 
 <details>
 <summary>long syntax</summary>
@@ -140,7 +140,7 @@ scl.lic( "__path_of_application_root__" )
 <tab>
 <br>
 
-### 2: To dispose license
+#### 2: To dispose license
 
 <details>
 <summary>long syntax</summary>
