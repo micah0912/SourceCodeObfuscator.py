@@ -15,7 +15,7 @@
 <tab>
 <br>
 
-### Highlights
+## Highlights
 ---
 
 Follow your scenario with no limit on development or release branches, or development or production states. **SCL** empowers you to:
@@ -28,7 +28,7 @@ Follow your scenario with no limit on development or release branches, or develo
 <tab>
 <br>
 
-### Languages
+## Languages
 ---
 
 **Across Platform Application Language**
@@ -50,7 +50,7 @@ Follow your scenario with no limit on development or release branches, or develo
 <tab>
 <br>
 
-### Requirements
+## Requirements
 ---
 
 1. [Python](https://www.python.org) version 3.10+
@@ -58,7 +58,7 @@ Follow your scenario with no limit on development or release branches, or develo
 <tab>
 <br>
 
-### Dependencies
+## Dependencies
 ---
 
 1. [spairaru.py](https://github.com/etrotech/spairaru.py) version 1.0+
@@ -66,10 +66,10 @@ Follow your scenario with no limit on development or release branches, or develo
 <tab>
 <br>
 
-### Installation
+## Installation
 ---
 
-##### A: PIP
+#### A: PIP
 
 ```python
 
@@ -80,7 +80,7 @@ Follow your scenario with no limit on development or release branches, or develo
 <tab>
 <br>
 
-##### B: Installer
+#### B: Installer
 1. Download from [Git](https://github.com/micah0912/mSCLmicah0912) or [Web](http://www.micah.xyz).
 2. Extra and find installer in <u>\_\_installers\_\_</u> folder.
 3. Execute installer according to you OS.
@@ -88,7 +88,7 @@ Follow your scenario with no limit on development or release branches, or develo
 <tab>
 <br>
 
-##### C: Manually
+#### C: Manually
 1. Download from [Git](https://github.com/micah0912/mSCLmicah0912) or [Web](http://www.micah.xyz).
 2. Extra and move **SCL** from <u>src</u> source or <u>dist</u> distribution folder, to <u>python path</u> or <u>working directory</u>.
 3. Default path is set to 
@@ -102,10 +102,10 @@ Follow your scenario with no limit on development or release branches, or develo
 <tab>
 <br> 
 
-### Basic Usage
+## Basic Usage
 ---
 
-##### 1: To apply license
+#### 1: To apply license
 
 <details>
 <summary>long syntax</summary>
@@ -136,7 +136,7 @@ scl.lic( "__path_of_application_root__" )
 <tab>
 <br>
 
-##### 2: To dispose license
+#### 2: To dispose license
 
 <details>
 <summary>long syntax</summary>
@@ -167,7 +167,7 @@ scl.ulic( "__path_of_application_root__" )
 <tab>
 <br> 
 
-### Advanced Usage
+## Advanced Usage
 ---
 
 *License Options*
@@ -194,7 +194,7 @@ scl.ulic( "__path_of_application_root__" )
 
 <br> 
 
-##### 1: Copy to Targeted Folder and Apply Licensing
+#### 1: Copy to Targeted Folder and Apply Licensing
 
 By giving `distribution` option, **SCL** will create a copy of target files and write to the copies.
 
@@ -232,7 +232,7 @@ scl.lic(
 <tab>
 <br>
 
-##### 2: Process over Symbolic Folders and Files
+#### 2: Process over Symbolic Folders and Files
 
 When target file is a symbolic link, with `follow_link` option enabled, **SCL** will either write to source file. Default is `false`.
 
@@ -274,7 +274,7 @@ For more options, advantaged examples, refer to [mSCF.py](http://www.micah-t.xyz
 <tab>
 <br> 
 
-### Customization
+## Customization
 ---
 - Customization setting can be created by by storing custom files follow [mSCX.py](https://github.com/micah0912/mSCX.py) specification.
 - In addition to the **.scx** folder, you can also place custom files in the **.scl** or **.scl.py** folders.
@@ -282,7 +282,7 @@ For more options, advantaged examples, refer to [mSCF.py](http://www.micah-t.xyz
 <tab>
 <br>
 
-### Custom - Template
+## Custom - Template
 ---
 
 - **.tpl**, the Template file provides the licensing text will be written into target file during licensing process.
@@ -307,7 +307,7 @@ For more options, advantaged examples, refer to [mSCF.py](http://www.micah-t.xyz
 <tab>
 <br>
 
-##### Naming
+#### Naming
 
 - For default template, 
 	1. name it as **@.tpl**;
@@ -334,7 +334,7 @@ In the above hierarchy, the template **abc*.html.tpl** will apply to all html fi
 <tab>
 <br>
 
-##### Design
+#### Design
 
 - To include dynamic text in a template file, enclose variable with <u>double curly braces</u> along with <u>parentage mark</u>.
 - Variables can be defined in **.cnf** configuration files.
@@ -377,7 +377,7 @@ This file is part of mSCL.py, which released under GPL-3.0-or-later.
 <tab>  
 <br>
 
-### Custom - Filter
+## Custom - Filter
 ---
 
 **SourceCodeCharacterFilter** : 
@@ -445,28 +445,25 @@ scf.fltr(
 <tab>
 <br>
 
-### Dependent Projects
+## Dependent Projects
 ---
 
-🟆 [mSCX.py](https://github.com/micah0912/mSCX.py)
- - Source Code X
+🟆 [mSCX.py](https://github.com/micah0912/mSCX.py) : Source Code X
 
 <tab>
 <br>
 
-### Peer Projects
+## Peer Projects
 ---
 
-🟆 [mSCF.py](https://github.com/micah0912/mSCF.py)
- - Source Code Format Manager
+🟆 [mSCF.py](https://github.com/micah0912/mSCF.py) : Source Code Format Manager
 
-🟆 [mSCO.py](https://github.com/micah0912/mSCO.py)
- - Source Code Obfuscation Manager
+🟆 [mSCO.py](https://github.com/micah0912/mSCO.py) : Source Code Obfuscation Manager
 
 <tab>
 <br>
 
-### ☕
+## ☕
 ---
 
 If you feel this app useful and helpful, please support me to make it better.
