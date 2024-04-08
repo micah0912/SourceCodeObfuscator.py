@@ -1,13 +1,13 @@
-# Source Code Licenser
+# Source Code Formatter
 
-🟆 [mSCL.py](http://www.micah-t.xyz)
+🟆 [mSCF.py](https://github.com/micah0912/mSCF.py)
 
 ![Release](https://img.shields.io/github/v/release/micah0912/mSCL.py?style=flat-square&color=blue)
 ![Stability-Beta](https://img.shields.io/badge/stability-mature-blue.svg?style=flat-square)
 [![Licence-GPLv3](https://img.shields.io/badge/license-GPLv3-blue.svg?style=flat-square)](https://github.com/micah0912/SCL.py/blob/master/LICENSE)
 ![Requirement-Paython-3.10](https://img.shields.io/badge/paython-%3E=3.10-blue.svg?style=flat-square)
 
-- A powerfully source cdoe <u>**License Manager**</u>.
+- A powerfully source cdoe <u>**Format Manager**</u>.
 - Developed for improved management of personal projects, and free to use.
 - Spinoff from [mSCX.py](https://github.com/micah0912/mSCX.py).
 - Built on [spairaru.py](https://github.com/etrotech/spairaru.py) framework.
@@ -20,12 +20,19 @@
 ### Highlights
 ---
 
-Follow your scenario with no limit on development or release branches, or development or production states. **SCL** empowers you to:
-- easily License or Unlicense files, toggle accordingly.
-- add or remove license texts 
-	- to all or specified file;
-	- using default or customized templates.
-- Automatically generate a LICENSE.txt file with default or customized templates.
+SCF has been designed with two distinct functionalities: "Beautify" and "Minify" for source code optimization.
+
+**Beautify** :
+	- Formats elements for improved readability.
+	- Enhances code clarity by formatting comments.
+	- Removes extraneous lines, spaces, and tabs to streamline code structure.
+	- Modify Document Indentation, Linebreak Sequence, and Encoding.
+
+**Minify** : 
+	- Enhances efficiency by removing comments.
+	- Seamlessly joins lines for maximum compactness.
+	- Minimizes file size by eliminating unnecessary lines, spaces, and tabs.
+	- Modify Document Linebreak Sequence and Encoding.
 
 <tab>
 <br>
@@ -40,7 +47,7 @@ Follow your scenario with no limit on development or release branches, or develo
 > .bash, .cmd, .sh, .zsh
 
 **Informational Language**
-> .cf, .cfg, .cnf, conf, .env, .ini
+> .cf, .cfg, .cnf, conf, .env, .ini, .json
 
 **Native Application Language** 
 > .swift
@@ -71,7 +78,7 @@ Follow your scenario with no limit on development or release branches, or develo
 ### Installation
 ---
 
-#### A: PIP
+##### A: PIP
 
 ```python
 
@@ -106,7 +113,8 @@ Follow your scenario with no limit on development or release branches, or develo
 
 ### Basic Usage
 ---
-### 1: To apply license
+
+#### 1: To beautify source code
 
 <details>
 <summary>long syntax</summary>
@@ -114,9 +122,10 @@ Follow your scenario with no limit on development or release branches, or develo
 
 ```python
 
-from mSCL import SourceCodeLicenser
+from mSCF import SourceCodeFormatter
 
-SourceCodeLicenser.license( "__path_of_application_root__" )
+SourceCodeFormatter.beautify( "__path_of_application_root__" )
+
 
 ```
 
@@ -128,9 +137,9 @@ SourceCodeLicenser.license( "__path_of_application_root__" )
 
 ```python
 
-from mSCL import scl
+from mSCF import scf
 
-scl.lic( "__path_of_application_root__" )
+scf.btfy( "__path_of_application_root__" )
 
 ```
 
@@ -139,7 +148,7 @@ scl.lic( "__path_of_application_root__" )
 <tab>
 <br>
 
-#### 2: To dispose license
+#### 2: To minify source code
 
 <details>
 <summary>long syntax</summary>
@@ -147,9 +156,10 @@ scl.lic( "__path_of_application_root__" )
 
 ```python
 
-from mSCL import SourceCodeLicenser
+from mSCF import SourceCodeFormatter
 
-SourceCodeLicenser.unlicense( "__path_of_application_root__" )
+SourceCodeFormatter.minify( "__path_of_application_root__" )
+
 
 ```
 
@@ -161,9 +171,9 @@ SourceCodeLicenser.unlicense( "__path_of_application_root__" )
 
 ```python
 
-from mSCL import scl
+from mSCF import scf
 
-scl.ulic( "__path_of_application_root__" )
+scf.mnfy( "__path_of_application_root__" )
 
 ```
 
@@ -175,33 +185,82 @@ scl.ulic( "__path_of_application_root__" )
 ### Advanced Usage
 ---
 
-*License Options*
+*Beautify Options*
 
-`make_license_text_file` :
-- Create LICENSE.txt if it does not exists in the root directory.
-- Defaults to `false`.
+`omit_line` :
+- Omit all removable empty lines.
+- Defaults to `true`.
 
-`optional_divider` :
-- Specifies the additional number of lines to be created after the License Template.
-- Defaults is `0`.
+`omit_space` :
+- Omit between spaces.
+- Remove all removable leading, trailing spaces.
+- Defaults to `true`.
+
+`omit_tab` :
+- Omit between tabs.
+- Remove all removable leading, trailing tabs.
+- Defaults to `true`.
+
+`format_comment` :
+- Format all comments.
+- Defaults to `true`.
+
+`format_element` :
+- Format all coding elements.
+- Defaults to `true`.
+
+`format_callable` :
+- Formats class, method, function, or any callables.
+- Requires `format_element` option to be enabled.
+- Defaults to `true`.
+
+`format_collection` :
+- Formats array, dictionary, tuple or any collection type objects.
+- Requires `format_element` option to be enabled.
+- Defaults to `true`.
+
+`format_variable` :
+- Formats variable, constant, or any defines.
+- Requires `format_element` option to be enabled.
+- Defaults to `true`.
 
 <br> 
 
-*Unlicense Options*
+*Minify Options*
 
-`optional_divider` :
-- Specifies the additional number of lines to be created after the License Template.
-- Defaults is `0`.
-
-`remove_license_text_file` :
-- Remove LICENSE.txt if it exists in the root directory.
+`keep_structure` :
+- When this is enabled, preserves the leading spaces or tabs of each line.
 - Defaults to `false`.
 
-<br> 
+`remove_line` :
+- Remove all removable empty lines.
+- Defaults to `true`.
+
+`remove_space` :
+- Remove all removable leading, between, trailing spaces.
+- Defaults to `true`.
+
+`remove_tab` :
+- Remove all removable leading, between, trailing tabs.
+- Defaults to `true`.
+
+`remove_comment` :
+- Remove all comments.
+- Defaults to `true`.
+
+`remove_multiple_line_comment` :
+- Remove all multiple-line comments. 
+- Requires `remove_comment` option to be enabled.
+- Defaults to `true`.
+
+`remove_single_line_comment` :
+- Remove all single-line comments.
+- Requires `remove_comment` option to be enabled.
+- Defaults to `true`.
 
 #### 1: Copy to Targeted Folder and Apply Licensing
 
-By giving `distribution` option, **SCL** will create a copy of target files and write to the copies.
+By giving `distribution` option, **SCF** will create a copy of target files and write to the copies.
 
 <details>
 <summary>long syntax</summary>
@@ -209,7 +268,7 @@ By giving `distribution` option, **SCL** will create a copy of target files and 
 
 ```python
 
-SourceCodeLicenser.license(
+SourceCodeFormatter.license(
 	"__path_of_application_root__" 
 	# Locational Options
 	, distribution_directory = "__path_of_distribution_directory__" 
@@ -225,7 +284,7 @@ SourceCodeLicenser.license(
 
 ```python
 
-scl.lic(
+scf.lic(
 	"__path_of_application_root__" 
 	# Locational Options
 	# distribution_directory
@@ -241,15 +300,14 @@ scl.lic(
 
 #### 2: Process over Symbolic Folders and Files
 
-When target file is a symbolic link, with `follow_link` option enabled, **SCL** will either write to source file. Default is `false`.
+When target file is a symbolic link, with `follow_link` option enabled, **SCF** will either write to source file. Default is `false`.
 
 <details>
 <summary>long syntax</summary>
-<br>
 
 ```python
 
-SourceCodeLicenser.license(
+SourceCodeFormatter.license(
 	"__path_of_application_root__" 
 	# Search Options
 	, follow_link = True
@@ -261,11 +319,10 @@ SourceCodeLicenser.license(
 
 <details>
 <summary>short syntax</summary>
-<br>
 
 ```python
 
-scl.lic(
+scf.lic(
 	"__path_of_application_root__" 
 	# Search Options
 	# follow_link
@@ -288,101 +345,6 @@ For more options, advantaged examples, refer to [mSCF.py](http://www.micah-t.xyz
 - Customization setting can be created by by storing custom files follow [mSCX.py](https://github.com/micah0912/mSCX.py) specification.
 - In addition to the **.scx** folder, you can also place custom files in the **.scl** or **.scl.py** folders.
 
-<tab>
-<br>
-
-### Custom - Template
----
-
-- **.tpl**, the Template file provides the licensing text will be written into target file during licensing process.
-
-*Example Hierarchy*
-
-```
-
-🏠
-├─ 🖿 .scl
-│  ├─ 🖺 xxx.apv
-│  ├─ 🖺 xxx.env
-│  ├─ 🖺 xxx.cnf
-│  ├─ 🖺 xxx.ign
-│  ├─ 🖺 xxx.ini
-│  ├─ 🖺 xxx.tpl 👈
-│  └─ ...
-└─ ...
-
-```
-
-<tab>
-<br>
-
-#### Naming
-
-- For default template, 
-	1. name it as **@.tpl**;
-	2. or name it in glob pattern ***.tpl**.
-- To specify template, 
-	1. name it as exactly the same as the target file;
-	2. or name it in glob pattern, like **abc*.tpl**.
-
-*Example of Naming*
-
-```
-
-🏠
-├─ 🖿 .scl
-│  ├─ 🖺 template.cnf 👈
-│  ├─ 🖺 abc*.html.tpl 👈
-│  └─ ...
-├─ 🖺 abcd.html 👈
-└─ ...
-
-```
-In the above hierarchy, the template **abc*.html.tpl** will apply to all html files start with **abc**. For all the other files, the template **@.tpl** will be applied.
-
-<tab>
-<br>
-
-#### Design
-
-- To include dynamic text in a template file, enclose variable with <u>double curly braces</u> along with <u>parentage mark</u>.
-- Variables can be defined in **.cnf** configuration files.
-
-*abc\*.html.tpl*
-
-```
-
-{{%SCL_PTN_NM}} {{%SCL_PTN_VER}}
-
-Copyright {{%SCL_LIC_HLDR}} {{%SCL_LIC_YR}}. All Rights Reserved.
-
-This file is part of {{%SCL_PTN_NM}}, which released under {{%SCL_LIC_TYP}}.
-
-```
-*template.cnf*
-
-```
-
-SCL_PTN_NM = mSCL.py
-SCL_PTN_VER = sr1.0.0
-SCL_LIC_HLDR = M
-SCL_LIC_YR = 2022
-SCL_LIC_TYP = GPL-3.0-or-later
-
-```
-
-*with variable placeholder converted, template outputs below*
-
-```
-
-mSCL.py sr1.0.0
-
-Copyright M, and its contributor 2022. All Rights Reserved.
-
-This file is part of mSCL.py, which released under GPL-3.0-or-later.
-
-```
-
 <tab>  
 <br>
 
@@ -392,12 +354,17 @@ This file is part of mSCL.py, which released under GPL-3.0-or-later.
 **SourceCodeCharacterFilter** : 
 - Contains Filters used to manage programing characters.
 
-**SourceCodeLicenseFilter** :
-- Contains Filters used to control decision or result in licensing process.
+**SourceCodeCleanupFilter** :
+- Contains Filters used to control decision or result in cleanup process.
+
+**SourceCodeLayoutFilter** :
+- Contains Filters used to control decision or result in layout process.
 
 <br>
 
-*Example of Editing A Commented Out Template*
+*Example of Changing RemoveHead Descision*
+
+\* when user enables the option `omit_space` or `omit_tab` or `remove_space` or `remove_tab`, RemoveHead filter will triggered to make further decisions based on the programming language.
 
 <details>
 <summary>long syntax</summary>
@@ -405,18 +372,79 @@ This file is part of mSCL.py, which released under GPL-3.0-or-later.
 
 ```python
 
-from mSCL import SourceCodeLicenseFilter
+from mSCF import SourceCodeCleanupFilter
 
 
 SourceCodeFormatter.filter(
 	# filter_name
-	SourceCodeLicenseFilter.CommentedOutContent
+	SourceCodeCleanupFilter.RemoveHead
+	# filter_listener
+	, (
+		lambda
+			sFilter__
+			, decision__
+			, file_extension_
+		:
+			return final_decision__
+	)
+)
+
+```
+
+</details>
+
+<details>
+<summary>short syntax</summary>
+<br>
+
+```python
+
+from mSCF import ScClnupFltr
+
+
+scf.fltr(
+	# filter_name
+	ScClnupFltr.RmHd
+	# filter_listener
+	, (
+		lambda
+			sFltr__
+			, dcsn__
+			, fl_ext__
+		:
+			return fin_dcsn__
+	)
+)
+
+```
+
+</details>
+
+<br>
+
+*Example of Modify Layout Result*
+
+\* when user enables the option `format_element`, ElementFormatedContent filter will triggered to determine if further editing is necessary.
+
+<details>
+<summary>long syntax</summary>
+<br>
+
+```python
+
+from mSCF import SourceCodeLayoutFilter
+
+
+SourceCodeFormatter.filter(
+	# filter_name
+	SourceCodeLayoutFilter.ElementFormatedContent
 	# filter_listener
 	, (
 		lambda
 			sFilter__
 			, orignal_content__
 			, mTargetFile__
+			, linebreak_symbol__
 		:
 			return final_content__
 	)
@@ -432,18 +460,19 @@ SourceCodeFormatter.filter(
 
 ```python
 
-from mSCF import ScLicFltr
+from mSCF import ScLyoFltr
 
 
 scf.fltr(
 	# filter_name
-	ScLicFltr.CmtdoCnt
+	ScLyoFltr.ElFmtdCnt
 	# filter_listener
 	, (
 		lambda
 			sFltr__
 			, orig_cnt__
 			, mTgtFl__
+			, lnbrk_smbo__
 		:
 			return fin_cnt__
 	)
@@ -460,7 +489,7 @@ scf.fltr(
 ---
 
 🟆 [mSCX.py](https://github.com/micah0912/mSCX.py)
-- Source Code X
+ - Source Code X
 
 <tab>
 <br>
@@ -468,13 +497,13 @@ scf.fltr(
 ### Peer Projects
 ---
 
-🟆 [mSCF.py](https://github.com/micah0912/mSCF.py)
-- Source Code Format Manager
+🟆 [mSCL.py](https://github.com/micah0912/mSCL.py)
+ - Source Code License Manager
 
 🟆 [mSCO.py](https://github.com/micah0912/mSCO.py)
-- Source Code Obfuscation Manager
+ - Source Code Obfuscation Manager
 
-<tab>
+<tab>  
 <br>
 
 ### ☕
