@@ -108,7 +108,6 @@ Follow your scenario with no limit on development or release branches, or develo
 
 <details>
 <summary>long syntax</summary>
-
 <br>
 
 ```python
@@ -123,7 +122,6 @@ SourceCodeLicenser.license( "__path_of_application_root__" )
 
 <details>
 <summary>short syntax</summary>
-
 <br>
 
 ```python
@@ -143,7 +141,6 @@ scl.lic( "__path_of_application_root__" )
 
 <details>
 <summary>long syntax</summary>
-
 <br>
 
 ```python
@@ -158,7 +155,6 @@ SourceCodeLicenser.unlicense( "__path_of_application_root__" )
 
 <details>
 <summary>short syntax</summary>
-
 <br>
 
 ```python
@@ -207,7 +203,6 @@ By giving `distribution` option, **SCL** will create a copy of target files and 
 
 <details>
 <summary>long syntax</summary>
-
 <br>
 
 ```python
@@ -224,7 +219,6 @@ SourceCodeLicenser.license(
 
 <details>
 <summary>short syntax</summary>
-
 <br>
 
 ```python
@@ -249,7 +243,6 @@ When target file is a symbolic link, with `follow_link` option enabled, **SCL** 
 
 <details>
 <summary>long syntax</summary>
-
 <br>
 
 ```python
@@ -266,7 +259,6 @@ SourceCodeLicenser.license(
 
 <details>
 <summary>short syntax</summary>
-
 <br>
 
 ```python
